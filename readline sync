@@ -1,0 +1,14 @@
+// Step 1: Import readline-sync
+const input = require('readline-sync');
+
+// Step 2: Prompt user for a word or phrase
+let userText = input.question("Enter a word or phrase: ");
+
+// Step 3: Prompt user for an index number
+let index = input.questionInt("Enter an index number to find the character at that position: ");
+
+// Step 4: Use bracket notation to access the character
+let character = userText[index];
+
+// Step 5: Print out the character
+console.log("The character at index " + index + " is: " + character);
